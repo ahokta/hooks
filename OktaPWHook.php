@@ -40,7 +40,7 @@ header('Content-Type: application/json');
 	}
 
 	// Okta Authentication
-        if (isset($header["X-Okta-Verification"])) {
+    if (isset($header["X-Okta-Verification"])) {
 	    $verify_secret = $header["X-Okta-Verification"];
 	} else {
 	    $verify_secret = "";
